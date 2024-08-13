@@ -13,8 +13,8 @@ genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 
 # app config
-st.set_page_config(page_title="Fun bot", page_icon="🤖")
-st.title("Fun bot 🤖")
+st.set_page_config(page_title="Doodle Talk", page_icon="🖍️")
+st.title("Doodle Talk 🖍️")
 
 # initialization of memory
 if "chat_history" not in st.session_state:

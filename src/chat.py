@@ -72,7 +72,6 @@ def chatbot():
         with st.chat_message("assistant"):
             progress_bar = st.progress(0)
             message_placeholder = st.empty()
-            # message_placeholder.markdown("Thinking...")
             try:
                 full_response = ""
                 for chunk in chat.send_message(prompt, stream=True):
@@ -95,13 +94,3 @@ def chatbot():
                 st.exception(e)
             st.session_state.chat_history = chat.history
 
-
-# # conversation
-# for message in st.session_state['chat_history']:
-#     if isinstance(message, HumanMessage):
-#         with st.chat_message("Human"):
-#             st.markdown(message.content)
-
-#     else:
-#         with st.chat_message("AI"):
-#             st.markdown(message.content)

@@ -12,10 +12,6 @@ if selection == "Home":
     st.title("Hey wassup?")
     st.write("Use the sidebar to navigate between")
 elif selection == "Chat with me :)":
-    with st.spinner("Loading Chatbot..."):
-        # st.title("Chat with me :)")
-        chatbot()
+    chatbot()
 elif selection == "Help with docs?":
-    with st.spinner("Loading PDF Reader..."):
-        # st.title("Help with docs?")
-        pdfReader()
+    pdfReader()

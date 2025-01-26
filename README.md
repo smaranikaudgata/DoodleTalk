@@ -1,5 +1,6 @@
 # DoodleTalk
 https://doodletalk.streamlit.app/
+
 A Streamlit application offering two features:
 1. **Chat with Me**: An interactive chatbot using the Gemini API.
 2. **Help with Docs**: A PDF reader that processes and answers questions based on uploaded PDF files.
